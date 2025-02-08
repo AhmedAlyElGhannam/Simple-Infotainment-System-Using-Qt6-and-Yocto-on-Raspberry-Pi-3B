@@ -6,5 +6,6 @@
         <file>Images/lock.png</file>
         <file>Images/unlock.png</file>
         <file>Images/user.png</file>
+        <file>Images/search.png</file>
     </qresource>
 </RCC>

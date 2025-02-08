@@ -17,7 +17,8 @@ Window {
         "qrc:/Images/car-icon.png",
         "qrc:/Images/lock.png",
         "qrc:/Images/unlock.png",
-        "qrc:/Images/user.png"
+        "qrc:/Images/user.png",
+        "qrc:/Images/search.png"
     ]
 
     // bottom bar
@@ -41,6 +42,17 @@ Window {
             height: parent.height * 0.85
             fillMode: Image.PreserveAspectFit
             source: imageAssetArr[2]
+        }
+
+        Rectangle {
+            id: passangerHVACControl
+            anchors {
+                top: parent.top
+                bottom: parent.bottom
+                left: carSettingsIcon.right
+                leftMargin: 150
+            }
+
         }
     }
 
@@ -88,7 +100,7 @@ Window {
             id: dateTimeDisplay
             anchors {
                 left: lockIcon.right
-                leftMargin: 30
+                leftMargin: 40
                 bottom: lockIcon.bottom
             }
             font.pixelSize: 12
@@ -101,7 +113,7 @@ Window {
             id: outdoorTempDisplay
             anchors {
                 left: dateTimeDisplay.right
-                leftMargin: 30
+                leftMargin: 40
                 bottom: lockIcon.bottom
             }
             font.pixelSize: 12
@@ -114,7 +126,7 @@ Window {
             id: userIcon
             anchors {
                 left: outdoorTempDisplay.right
-                leftMargin: 30
+                leftMargin: 40
                 bottom: lockIcon.bottom
             }
 
@@ -134,6 +146,58 @@ Window {
             font.bold: true
             color: "black"
             text: systemHandler.userName
+        }
+
+        // search bar
+        Rectangle {
+            id: navSearchBar
+            color: "#ede9e8"
+            radius: 5
+            anchors {
+                left: lockIcon.left
+                top: lockIcon.bottom
+                topMargin: 15
+            }
+            Image {
+                id: searchIcon
+                anchors {
+                    left: parent.left
+                    leftMargin: 25
+                    verticalCenter: parent.verticalCenter
+                }
+                height: parent.height * 0.5
+                width: 30
+                source: imageAssetArr[6]
+
+            }
+
+            Text {
+                id: searchBarTxt
+                visible: searchBarTxtInput.text === ""
+                color: "#ABA5A5"
+                text: "Navigate"
+                anchors {
+                    verticalCenter: parent.verticalCenter
+                    left: searchIcon.right
+                    leftMargin: 20
+                }
+            }
+
+            TextInput{
+                id: searchBarTxtInput
+                clip: true
+                anchors {
+                    top: parent.top
+                    bottom: parent.bottom
+                    right: parent.right
+                    left: searchIcon.right
+                    leftMargin: 20
+                    rightMargin: 20
+                }
+                verticalAlignment: Text.AlignVCenter
+            }
+            width: parent.width * (1/3)
+            height: parent.height * (1/12)
         }
 
         width: parent.width * (2/3)

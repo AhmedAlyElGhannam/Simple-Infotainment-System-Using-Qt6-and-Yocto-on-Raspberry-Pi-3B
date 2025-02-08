@@ -22,6 +22,7 @@ qt_add_qml_module(appInfotainmentSystem-UI
         Main.qml
         RESOURCES qrc.qrc
         SOURCES Controllers/system.h Controllers/system.cpp
+        SOURCES Controllers/hvachandler.h Controllers/hvachandler.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
