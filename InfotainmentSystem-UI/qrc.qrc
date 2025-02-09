@@ -7,5 +7,19 @@
         <file>Images/unlock.png</file>
         <file>Images/user.png</file>
         <file>Images/search.png</file>
+        <file>Images/volume.png</file>
+        <file>Images/iti-logo.png</file>
+        <file>Images/play.png</file>
+        <file>Images/next.png</file>
+        <file>Images/previous.png</file>
+        <file>Images/album-cover.png</file>
+        <file>Images/star.png</file>
+        <file>Images/tune.png</file>
+        <file>Images/playlist.png</file>
+        <file>Images/headlight.png</file>
+        <file>Images/battery.png</file>
+        <file>Images/headlight-on.png</file>
+        <file>Images/location.png</file>
+        <file>Images/iti-login.jpeg</file>
     </qresource>
 </RCC>
