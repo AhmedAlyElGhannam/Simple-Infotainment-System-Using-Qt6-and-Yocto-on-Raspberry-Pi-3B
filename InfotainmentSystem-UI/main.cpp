@@ -26,9 +26,6 @@ int main(int argc, char *argv[])
     context->setContextProperty("passengerHVAC", &m_passengerHVACHandler);
     context->setContextProperty("lightControl", &m_lightControlHandler);
 
-    qDebug() << "LightControl object pointer: " << &m_lightControlHandler;
-
-
     QObject::connect(
         &engine,
         &QQmlApplicationEngine::objectCreationFailed,
