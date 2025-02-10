@@ -1,4 +1,4 @@
-# Car-Interior-Lighting-System
+# Simple Infotainment System Using Qt6 & Yocto on Raspberry Pi 3B+
 
 ## Introduction
 This is project, as the name suggests, is a GUI QtQuick application built using Qt6 framework for the Raspberry Pi 3B+. The application UI design is hugely inspired by Tesla's own UI and the app itself runs on a customized Yocto image (Kirkstone LTS) build for the Raspberry Pi that fully supports Qt6 and provides an SDK for cross-development. The project was a major success and this README file will be my way of documenting the entire process step-by-step.
