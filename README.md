@@ -4,7 +4,7 @@
 This is project, as the name suggests, is a GUI QtQuick application built using Qt6 framework for the Raspberry Pi 3B+. The application UI design is hugely inspired by Tesla's own UI and the app itself runs on a customized Yocto image (Kirkstone LTS) build for the Raspberry Pi that fully supports Qt6 and provides an SDK for cross-development. The project was a major success and this README file will be my way of documenting the entire process step-by-step.
 
 ## Motivation
-So, why such huge time investment into a project this big while you get tasks/projects thrown at you daily in ITI? The answer to this lies in how my Qt mentor, Eng. Anas, motivated me to take such a route. The initial version of the project was to-be-run on a laptop and control its Capslock LED, but he encouraged us to go beyond that and do it for the Raspbery Pi. And, since I have some experience with The Yocto Project, I decided to make an image for it and he fully supported my decision. Huge shout out to him! :)
+So, why such huge time investment into a project this big while you get tasks/projects thrown at you daily in ITI? The answer to this lies in how my Qt mentor, [Eng. Anas Khamees](https://github.com/anaskhamees), motivated me to take such a route. The initial version of the project was to-be-run on a laptop and control its Capslock LED, but he encouraged us to go beyond that and do it for the Raspbery Pi. And, since I have some experience with The Yocto Project, I decided to make an image for it and he fully supported my decision. Huge shout out to him! :)
 
 ## Target Hardware Specifications
 As stated earlier, the target hardware is a Raspberry Pi 3B+ 1GB RAM with the following pin configuration. Knowing the pin configuration will be important later on in order to communicate with the Pi via a serial terminal like `gtkterm` using a USB-to-TTL device as shown below.
@@ -238,6 +238,32 @@ cmake --build buildYocto --parallel 12
 ### Setting Up The Image
 You can either do the following steps though a monitor and keyboard connected to the Raspberry Pi or through a serial terminal via your PC.
 
+If you are using a serial serial terminal, follow the following instructions:
+ 1. My serial terminal of choice is `gtkterm`. In order to install it, simply:
+    ```
+    sudo apt install gtkterm -y
+    ```
+1. A common problem with USB-to-TTL devices is that they keep getting disconnected once it is connected to the PC. To solve this, write:
+   ```
+   sudo apt remove brltty
+   ```
+1. Another common issue is `gtk` saying permission denied for this user. To solve this, add your user to the dialout group:
+   ```
+   sudo usermod -a -G dialout YOUR_USERNAME
+   ```
+1. Insert the SD card into the Pi.
+1. Connect the Pi to USB-to-TTL as follows:
+   1. GND --> GND
+   1. Tx  --> Rx
+   1. Rx  --> Tx
+1. Connect USB-to-TTL to the PC via USB.
+1. Launch `gtkterm` using the following command:
+   ```
+   gtkterm -p /dev/ttyUSB0 -s 115200
+   ```
+1. Power on the Pi. You should see the starting screen on `gtkterm`.
+
+
 #### Turn on Wifi
 I used `connmanctl` to connect to my wifi network.
 ```
@@ -247,6 +273,9 @@ scan wifi
 services
 connect wifi_XXX_YYY_managed_psk
 # enter your network passwork
+exit
+systemctl enable connman
+systemctl start connman
 ```
 
 #### ssh into Pi
@@ -278,3 +307,23 @@ rsync -av -e ssh appInfotainmentSystem-UI root@192.168.1.113:/home/root
 
 
 ## Qt Application
+### Brief
+I used `QtCreator` to create a QtQuick application. My main goal was to implement the functionality of GPIO/LED control but I decided to learn more about Qt and create a visually-appealing GUI even if most of the elements present in it are static.
+
+### Features
+1. A login screen that displays ITI's logo for 2 seconds before shifting into the app GUI.
+1. A section that displays system time.
+1. An interactive lock icon that changes when clicked on.
+1. A map GUI component that **unfortunately** did not work on the Pi so I settled for a static image.
+1. A search bar that accepts text.
+1. Finally, the star of the show: a light icon that, when pressed, toggles an actual LED connected to GPIO pin 26 of the Raspberry Pi.
+
+### Resources
+I mostly relied on [MontyTheSoftwareEngineer's](https://www.youtube.com/@MontyTheSoftwareEngineer) videos titled [Let's Recreate the Tesla UI in Qt and QML PART 1!](https://www.youtube.com/watch?v=Tq-E6lqO6tM&t=1920s) and [Part 2: Let's Recreate the Tesla UI in Qt and QML](https://www.youtube.com/watch?v=MEdJNc1tfwE&t=2289s). Following him step-by-step gave me the knowledge and intuition needed to accomplish my goal.
+
+## Result
+See for yourself! :D
+
+![](./README_Photos/app-ui.png)
+
+![](./README_Photos/Demo.mp4)
