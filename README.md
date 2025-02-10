@@ -324,6 +324,7 @@ I mostly relied on [MontyTheSoftwareEngineer's](https://www.youtube.com/@MontyTh
 ## Results
 See for yourself! :D
 
+![](./README_Photos/app-login.png)
 ![](./README_Photos/app-ui.png)
 
 https://github.com/user-attachments/assets/d76b72f1-4bde-4381-a1d2-da9f32d8779d
