@@ -321,9 +321,12 @@ I used `QtCreator` to create a QtQuick application. My main goal was to implemen
 ### Resources
 I mostly relied on [MontyTheSoftwareEngineer's](https://www.youtube.com/@MontyTheSoftwareEngineer) videos titled [Let's Recreate the Tesla UI in Qt and QML PART 1!](https://www.youtube.com/watch?v=Tq-E6lqO6tM&t=1920s) and [Part 2: Let's Recreate the Tesla UI in Qt and QML](https://www.youtube.com/watch?v=MEdJNc1tfwE&t=2289s). Following him step-by-step gave me the knowledge and intuition needed to accomplish my goal.
 
-## Result
+## Results
 See for yourself! :D
 
 ![](./README_Photos/app-ui.png)
 
-![](./README_Photos/Demo.mp4)
+https://github.com/user-attachments/assets/d76b72f1-4bde-4381-a1d2-da9f32d8779d
+
+
+
