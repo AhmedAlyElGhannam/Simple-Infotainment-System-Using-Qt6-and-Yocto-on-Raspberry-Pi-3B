@@ -249,7 +249,7 @@ If you are using a serial serial terminal, follow the following instructions:
    ```
 1. Another common issue is `gtk` saying permission denied for this user. To solve this, add your user to the dialout group:
    ```
-   sudo usermod -a -G dialout YOUR_USERNAME
+   sudo usermod -a -G dialout $USER
    ```
 1. Insert the SD card into the Pi.
 1. Connect the Pi to USB-to-TTL as follows:
