@@ -1,0 +1,54 @@
+{
+    "classes": [
+        {
+            "className": "HVACHandler",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "val",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "incrementTargetTemperature",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 0,
+                    "name": "targetTemperature",
+                    "notify": "targetTemperatureChanged",
+                    "read": "targetTemperature",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "write": "setTargetTemperature"
+                }
+            ],
+            "qualifiedClassName": "HVACHandler",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "targetTemperatureChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "hvachandler.h",
+    "outputRevision": 68
+}

@@ -1,0 +1,5 @@
+module InfotainmentSystem-UI
+typeinfo appInfotainmentSystem-UI.qmltypes
+prefer :/qt/qml/InfotainmentSystem-UI/
+Main 1.0 Main.qml
+

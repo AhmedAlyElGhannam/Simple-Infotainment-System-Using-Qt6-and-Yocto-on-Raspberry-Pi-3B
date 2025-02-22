@@ -1,0 +1,57 @@
+{
+    "classes": [
+        {
+            "className": "LightControl",
+            "lineNumber": 6,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "newLightToggle",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "setLightToggle",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 0,
+                    "name": "lightToggle",
+                    "notify": "lightToggleChanged",
+                    "read": "lightToggle",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setLightToggle"
+                }
+            ],
+            "qualifiedClassName": "LightControl",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "lightToggleChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "lightcontrol.h",
+    "outputRevision": 68
+}

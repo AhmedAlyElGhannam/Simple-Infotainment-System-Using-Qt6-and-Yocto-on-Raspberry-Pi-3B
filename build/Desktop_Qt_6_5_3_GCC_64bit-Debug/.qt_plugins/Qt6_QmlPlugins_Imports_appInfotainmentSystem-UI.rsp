@@ -1,0 +1,14 @@
+-rootPath
+/home/nemesis/Storage/Playground/Github_Repositories/ITI_EmbeddedLinux/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B/InfotainmentSystem-UI
+-cmake-output
+-output-file
+/home/nemesis/Storage/Playground/Github_Repositories/ITI_EmbeddedLinux/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B/InfotainmentSystem-UI/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_appInfotainmentSystem-UI.cmake
+-importPath
+/home/nemesis/Storage/Playground/Github_Repositories/ITI_EmbeddedLinux/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B/InfotainmentSystem-UI/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/InfotainmentSystem-UI
+-importPath
+/home/nemesis/Storage/Playground/Github_Repositories/ITI_EmbeddedLinux/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B/InfotainmentSystem-UI/build/Desktop_Qt_6_5_3_GCC_64bit-Debug
+-importPath
+/home/nemesis/Qt/6.5.3/gcc_64/./qml
+-qrcFiles
+/home/nemesis/Storage/Playground/Github_Repositories/ITI_EmbeddedLinux/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B/InfotainmentSystem-UI/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/qmake_InfotainmentSystem-UI.qrc
+/home/nemesis/Storage/Playground/Github_Repositories/ITI_EmbeddedLinux/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B/InfotainmentSystem-UI/build/Desktop_Qt_6_5_3_GCC_64bit-Debug/.rcc/appInfotainmentSystem-UI_raw_qml_0.qrc

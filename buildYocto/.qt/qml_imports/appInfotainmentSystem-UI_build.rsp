@@ -1,0 +1,14 @@
+-rootPath
+/home/nemesis/Playground/Github_Repositories/ITI_EmbeddedLinux/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B/InfotainmentSystem-UI
+-cmake-output
+-output-file
+/home/nemesis/Playground/Github_Repositories/ITI_EmbeddedLinux/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B/InfotainmentSystem-UI/buildYocto/.qt/qml_imports/appInfotainmentSystem-UI_build.cmake
+-importPath
+/home/nemesis/Playground/Github_Repositories/ITI_EmbeddedLinux/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B/InfotainmentSystem-UI/buildYocto/InfotainmentSystem-UI
+-importPath
+/home/nemesis/Playground/Github_Repositories/ITI_EmbeddedLinux/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B/InfotainmentSystem-UI/buildYocto
+-importPath
+/home/nemesis/Playground/ELBS_Playground/Yocto_Playground/build-RPi3-Qt6/SDK/sysroots/cortexa53-poky-linux/usr/lib/qml
+-qrcFiles
+/home/nemesis/Playground/Github_Repositories/ITI_EmbeddedLinux/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B/InfotainmentSystem-UI/buildYocto/.qt/rcc/qmake_InfotainmentSystem-UI.qrc
+/home/nemesis/Playground/Github_Repositories/ITI_EmbeddedLinux/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B/InfotainmentSystem-UI/buildYocto/.qt/rcc/appInfotainmentSystem-UI_raw_qml_0.qrc
