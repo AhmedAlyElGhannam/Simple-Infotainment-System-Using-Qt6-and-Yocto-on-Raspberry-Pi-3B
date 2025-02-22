@@ -49,7 +49,7 @@ QString System::userName() const
     return m_userName;
 }
 
-void System::setuserName(const QString &newUserName)
+void System::setUserName(const QString &newUserName)
 {
     if (m_userName == newUserName)
         return;

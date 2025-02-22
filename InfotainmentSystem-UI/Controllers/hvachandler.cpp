@@ -10,7 +10,7 @@ int HVACHandler::targetTemperature() const
     return m_targetTemperature;
 }
 
-void HVACHandler::settargetTemperature(int newTargetTemperature)
+void HVACHandler::setTargetTemperature(int newTargetTemperature)
 {
     if (m_targetTemperature == newTargetTemperature)
         return;
@@ -21,5 +21,5 @@ void HVACHandler::settargetTemperature(int newTargetTemperature)
 void HVACHandler::incrementTargetTemperature(const int & val)
 {
     int newTargetTemp = m_targetTemperature + val;
-    settargetTemperature(newTargetTemp);
+    setTargetTemperature(newTargetTemp);
 }

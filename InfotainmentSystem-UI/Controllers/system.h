@@ -23,7 +23,7 @@ public:
     void setoutdoorTemp(int newOutdoorTemp);
 
     QString userName() const;
-    void setuserName(const QString &newUserName);
+    void setUserName(const QString &newUserName);
 
     QString currentTime() const;
     void setCurrentTime(const QString &newCurrentTime);

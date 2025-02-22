@@ -121,7 +121,7 @@ Window {
             right: parent.right
         }
 
-        // indicates that open-source map component will be used
+        // // indicates that open-source map component will be used
         // Plugin {
         //     id: mapPlugin
         //     name: "osm"

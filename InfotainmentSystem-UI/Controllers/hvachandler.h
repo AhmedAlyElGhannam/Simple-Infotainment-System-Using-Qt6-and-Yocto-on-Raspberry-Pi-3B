@@ -11,7 +11,7 @@ public:
     explicit HVACHandler(QObject *parent = nullptr);
 
     int targetTemperature() const;
-    void settargetTemperature(int newTargetTemperature);
+    void setTargetTemperature(int newTargetTemperature);
 
     Q_INVOKABLE void incrementTargetTemperature(const int & val);
 
