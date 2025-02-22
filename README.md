@@ -1,7 +1,7 @@
 # Simple Infotainment System Using Qt6 & Yocto on Raspberry Pi 3B+
 
 ## Introduction
-This is project, as the name suggests, is a GUI QtQuick application built using Qt6 framework for the Raspberry Pi 3B+. The application UI design is hugely inspired by Tesla's own UI and the app itself runs on a customized Yocto image (Kirkstone LTS) build for the Raspberry Pi that fully supports Qt6 and provides an SDK for cross-development. The project was a major success and this README file will be my way of documenting the entire process step-by-step.
+This project, as the name suggests, is a GUI QtQuick application built using Qt6 framework for the Raspberry Pi 3B+. The application UI design is hugely inspired by Tesla's own UI and the app itself runs on a customized Yocto image (Kirkstone LTS) build for the Raspberry Pi that fully supports Qt6 and provides an SDK for cross-development. The project was a major success and this README file will be my way of documenting the entire process step-by-step.
 
 ## Motivation
 So, why such huge time investment into a project this big while you get tasks/projects thrown at you daily in ITI? The answer to this lies in how my Qt mentor, [Eng. Anas Khamees](https://github.com/anaskhamees), motivated me to take such a route. The initial version of the project was to-be-run on a laptop and control its Capslock LED, but he encouraged us to go beyond that and do it for the Raspbery Pi. And, since I have some experience with The Yocto Project, I decided to make an image for it and he fully supported my decision. Huge shout out to him! :)
@@ -249,7 +249,7 @@ If you are using a serial serial terminal, follow the following instructions:
    ```
 1. Another common issue is `gtk` saying permission denied for this user. To solve this, add your user to the dialout group:
    ```
-   sudo usermod -a -G dialout YOUR_USERNAME
+   sudo usermod -a -G dialout $USER
    ```
 1. Insert the SD card into the Pi.
 1. Connect the Pi to USB-to-TTL as follows:
