@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/qt/qml/InfotainmentSystem-UI">/home/nemesis/Playground/Github_Repositories/ITI_EmbeddedLinux/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B/InfotainmentSystem-UI/buildYocto/InfotainmentSystem-UI</file>
-
-  </qresource>
-</RCC>
